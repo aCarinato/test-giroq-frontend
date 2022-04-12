@@ -1,0 +1,19 @@
+.formRow {
+  padding: 0.5rem 0.5rem;
+}
+
+.formCol {
+  width: 50%;
+}
+
+.formInput {
+  width: 35%;
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+}
