@@ -107,6 +107,8 @@ export default function App() {
           // const retrievedEvents = await axios.get(
           //   // `${process.env.NEXT_PUBLIC_API}/events/`
           // );
+          console.log(`DENTRO IL TRY. `);
+          console.log(`${process.env.NEXT_PUBLIC_API}/events/`);
           const retrievedEvents = await axios.post(
             `${process.env.NEXT_PUBLIC_API}/events/`,
             filterParams
@@ -114,6 +116,7 @@ export default function App() {
           setEvents(retrievedEvents.data);
           // console.log(events);
         } catch (err) {
+          console.log('ndata de merda');
           console.log(err);
         }
       };
